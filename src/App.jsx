@@ -1,11 +1,17 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import AdminPage from './components/adminPage'
+import AdminPage from './pages/admin/adminPage'
+import HomePge from './pages/home/homePage'
 
 function App() {
   return (
-    <div>
-      <AdminPage/>
-    </div>
+    <BrowserRouter>
+      <Routes path="/*">
+        <Route path='/' element={<HomePge/>}/>
+        <Route path='/admin' element={<AdminPage/>}/>
+        <Route path='/*' element={<h1>Not Found</h1>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
