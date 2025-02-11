@@ -1,5 +1,11 @@
-export default function HomePge(){
+import Header from "../../components/header";
+
+export default function Home(){
+
     return(
-        <h1 className="text-red-900 flex items-center justify-center">This is home page</h1>
+      <div>
+        <Header/>
+        <h1>Home</h1>
+      </div>
     )
-}
+  }
