@@ -4,7 +4,7 @@ export default function Header(){
     return(
         <header className="w-full h-[100px] shadow-xl
         flex justify-center relative">
-            <img src="/logo.jpg" alt="logo" className="w-[100px] h-[100px] 
+            <img src="/logo.png" alt="logo" className="w-[100px] h-[100px] 
             object-cover absolute left-1 border-[4px]
             border-white rounded-full"/>
             <Link to="/" className="text-[25px]
